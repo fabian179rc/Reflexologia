@@ -3,7 +3,7 @@ import { MotionConfig } from "framer-motion";
 import { Landing } from "./pages/Landing";
 import { useScreenInit } from "./useScreenInit";
 import { getCheckoutUrl } from "./utils/checkoutUrl";
-const META_PIXEL_ID = "885197304240866";
+const META_PIXEL_ID = "8851973042408664";
 const PAGE_TITLE =
   "Protocolo GLP-1 Sin Rebote — Grasamax | Biohacking & GLP-1";
 const PAGE_DESC =
