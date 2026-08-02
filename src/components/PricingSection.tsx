@@ -76,10 +76,10 @@ export function PricingSection() {
           <picture>
             <source
               media="(min-width: 768px)"
-              srcSet={`${import.meta.env.BASE_URL}metodo-glucosa-mockup.webp`}
+              srcSet={`${import.meta.env.BASE_URL}protocolo-glp1-mockup.webp`}
             />
             <img
-              src={`${import.meta.env.BASE_URL}metodo-glucosa-mockup-mobile.webp`}
+              src={`${import.meta.env.BASE_URL}protocolo-glp1-mockup-mobile.webp`}
               alt="Protocolo GLP-1 Sin Rebote"
               width={1254}
               height={1254}
@@ -124,7 +124,10 @@ export function PricingSection() {
             $19
           </div>
           <span className="inline-block bg-slate-100 text-slate-700 text-sm font-medium px-4 py-1.5 rounded-full mb-5">
-            Pagás en tu moneda local · MXN · COP · ARS · CLP · PEN
+            <span className="md:hidden">Pagás en tu moneda local</span>
+            <span className="hidden md:inline">
+              Pagás en tu moneda local · MXN · COP · ARS · CLP · PEN
+            </span>
           </span>
           <p className="text-[#B85C43] font-semibold text-base leading-snug mb-6">
             🔥 ¡Última oportunidad! El precio sube al finalizar el contador.

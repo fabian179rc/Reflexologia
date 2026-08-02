@@ -87,7 +87,7 @@ export function BonusesSection() {
                 </span>
               </div>
               <div className="px-2 pb-2">
-                <h3 className="font-heading font-bold text-[#2f3a2c] text-[15px] mb-1">
+                <h3 className="hidden md:block font-heading font-bold text-[#2f3a2c] text-[15px] mb-1">
                   {b.title}
                 </h3>
                 <p className="text-slate-600 text-sm leading-snug">{b.desc}</p>

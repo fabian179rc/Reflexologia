@@ -36,10 +36,10 @@ export function SolutionSection() {
           <picture>
             <source
               media="(min-width: 768px)"
-              srcSet={`${import.meta.env.BASE_URL}metodo-glucosa-mockup.webp`}
+              srcSet={`${import.meta.env.BASE_URL}protocolo-glp1-mockup.webp`}
             />
             <img
-              src={`${import.meta.env.BASE_URL}metodo-glucosa-mockup-mobile.webp`}
+              src={`${import.meta.env.BASE_URL}protocolo-glp1-mockup-mobile.webp`}
               alt="Protocolo GLP-1 Sin Rebote"
               width={1254}
               height={1254}
@@ -52,11 +52,19 @@ export function SolutionSection() {
 
         <div className="bg-white/60 border border-amber-100 text-[#2f3a2c] rounded-3xl p-6 md:p-8 shadow-sm">
           <p className="md:text-xl font-medium text-slate-700 text-[16px]">
-            El problema no es el fármaco: es no tener el Manual de
-            Ingeniería. Hasta el 40% del peso perdido con GLP-1 puede ser
-            masa muscular. Existe un "Punto Dulce Metabólico" que le ordena
-            a tu cuerpo quemar grasa mientras blinda el músculo — la
-            diferencia entre verte "enfermo y flaco" o "atlético y definido".
+            <span className="md:hidden">
+              Hasta el 40% del peso perdido con GLP-1 puede ser músculo. El
+              "Punto Dulce Metabólico" ordena a tu cuerpo quemar grasa y
+              blindar el músculo — la diferencia entre "enfermo y flaco" y
+              "atlético y definido".
+            </span>
+            <span className="hidden md:inline">
+              El problema no es el fármaco: es no tener el Manual de
+              Ingeniería. Hasta el 40% del peso perdido con GLP-1 puede ser
+              masa muscular. Existe un "Punto Dulce Metabólico" que le ordena
+              a tu cuerpo quemar grasa mientras blinda el músculo — la
+              diferencia entre verte "enfermo y flaco" o "atlético y definido".
+            </span>
           </p>
         </div>
       </div>

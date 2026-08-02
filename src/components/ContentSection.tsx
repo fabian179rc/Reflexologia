@@ -136,14 +136,14 @@ export function ContentSection() {
           <h3 className="font-heading font-bold text-[#2f3a2c] text-2xl md:text-3xl mb-5 text-center">
             ✨ Los 5 módulos del protocolo:
           </h3>
-          <div className="grid sm:grid-cols-2 gap-3 max-w-2xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-2 sm:gap-3 max-w-2xl mx-auto">
             {incluye.map((item, i) => (
               <div
                 key={i}
-                className="flex items-center gap-3 bg-emerald-50 border border-emerald-100 rounded-xl px-4 py-3"
+                className="flex items-center gap-2 sm:gap-3 bg-emerald-50 border border-emerald-100 rounded-xl px-3 py-2 sm:px-4 sm:py-3"
               >
-                <CheckCircle2 className="w-5 h-5 text-emerald-500 flex-shrink-0" />
-                <span className="font-semibold text-[#2f3a2c] text-[15px] leading-tight">
+                <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0" />
+                <span className="font-semibold text-[#2f3a2c] text-[12px] sm:text-[15px] leading-tight">
                   {item}
                 </span>
               </div>

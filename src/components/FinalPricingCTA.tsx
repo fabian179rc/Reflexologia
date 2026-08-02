@@ -43,10 +43,10 @@ export function FinalPricingCTA() {
             whileTap={{
               scale: 0.98,
             }}
-            className="flex items-center justify-center gap-3 w-full bg-[#B85C43] hover:bg-[#A34F38] text-white font-bold text-lg md:text-xl px-6 py-5 rounded-full shadow-lg shadow-[#B85C43]/30 transition-colors mb-4"
+            className="flex items-center justify-center gap-2 md:gap-3 w-full bg-[#B85C43] hover:bg-[#A34F38] text-white font-bold text-[13px] md:text-xl px-4 py-3.5 md:px-6 md:py-5 rounded-full shadow-lg shadow-[#B85C43]/30 transition-colors mb-4"
           >
             <span className="text-center">🚀 SÍ, QUIERO MI PROTOCOLO COMPLETO HOY</span>
-            <ArrowRight className="w-6 h-6 flex-shrink-0" />
+            <ArrowRight className="w-4 h-4 md:w-6 md:h-6 flex-shrink-0" />
           </motion.a>
         </div>
 

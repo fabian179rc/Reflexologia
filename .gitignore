@@ -33,3 +33,14 @@ dist-ssr
 /mockup-web.webp
 /webacopiar
 /public/checklist-2
+
+# Raw source drops already copied into public/ under their final names
+/bon1.webp
+/bon2.webp
+/bon3.webp
+/bon4.webp
+/bon5.webp
+/mockup-web.png
+/Mockup-mobile.png
+/mockup-web2.png
+/Mockup-mobile1.png

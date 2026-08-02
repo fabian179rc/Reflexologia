@@ -8,8 +8,8 @@ const PAGE_TITLE =
   "Protocolo GLP-1 Sin Rebote — Grasamax | Biohacking & GLP-1";
 const PAGE_DESC =
   "El manual técnico que tu médico no te dio para transformarte con GLP-1 sin perder músculo, firmeza ni piel.";
-const HERO_IMAGE = `${import.meta.env.BASE_URL}metodo-glucosa-mockup.webp`;
-const HERO_IMAGE_MOBILE = `${import.meta.env.BASE_URL}metodo-glucosa-mockup-mobile.webp`;
+const HERO_IMAGE = `${import.meta.env.BASE_URL}protocolo-glp1-mockup.webp`;
+const HERO_IMAGE_MOBILE = `${import.meta.env.BASE_URL}protocolo-glp1-mockup-mobile.webp`;
 
 const SITE_URL = "https://grasamax.com";
 function setMeta(attr: "name" | "property", key: string, content: string) {

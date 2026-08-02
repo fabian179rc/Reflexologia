@@ -43,7 +43,7 @@ export function HeroSection() {
             duration: 0.6,
             delay: 0.1,
           }}
-          className="font-heading md:text-5xl font-extrabold text-[#2f3a2c] mb-0 text-[26px]"
+          className="font-heading md:text-5xl font-extrabold text-[#2f3a2c] mb-0 text-[21px] leading-[1.15] md:leading-[normal]"
         >
           ¿Y si el verdadero problema empezara
           <br />
@@ -70,10 +70,10 @@ export function HeroSection() {
           <picture>
             <source
               media="(min-width: 768px)"
-              srcSet={`${import.meta.env.BASE_URL}metodo-glucosa-mockup.webp`}
+              srcSet={`${import.meta.env.BASE_URL}protocolo-glp1-mockup.webp`}
             />
             <img
-              src={`${import.meta.env.BASE_URL}metodo-glucosa-mockup-mobile.webp`}
+              src={`${import.meta.env.BASE_URL}protocolo-glp1-mockup-mobile.webp`}
               alt="Protocolo GLP-1 Sin Rebote"
               width={1254}
               height={1254}
@@ -100,15 +100,21 @@ export function HeroSection() {
           }}
           className="max-w-2xl mx-auto mt-0 mb-2"
         >
-          <p className="text-slate-600 text-[14px] md:text-lg leading-relaxed">
+          <p className="hidden md:block text-slate-600 md:text-lg leading-relaxed">
             El manual técnico que tu médico no te dio — para transformarte de
             verdad con tu tratamiento GLP-1.
           </p>
-          <p className="font-semibold text-[#2f3a2c] text-[14px] md:text-lg leading-relaxed mt-2">
-            💪 Preservá tu músculo · ✨ Protegé tu piel · 🛡️ Blindá tu
-            metabolismo contra el rebote
+          <p className="font-semibold text-[#2f3a2c] text-[14px] md:text-lg leading-relaxed md:mt-2">
+            <span className="md:hidden">
+              💪 Preservá tu músculo · ✨ Protegé tu piel · 🛡️ Blindá tu
+              metabolismo frente al GLP-1
+            </span>
+            <span className="hidden md:inline">
+              💪 Preservá tu músculo · ✨ Protegé tu piel · 🛡️ Blindá tu
+              metabolismo contra el rebote
+            </span>
           </p>
-          <p className="text-slate-500 text-[12px] md:text-sm mt-2">
+          <p className="text-slate-500 text-[11px] md:text-sm mt-1 md:mt-2">
             Sin horas en el gimnasio. Sin dietas imposibles.
           </p>
         </motion.div>
@@ -137,33 +143,33 @@ export function HeroSection() {
             whileTap={{
               scale: 0.98,
             }}
-            className="flex items-center justify-center gap-3 w-full sm:w-auto bg-[#B85C43] hover:bg-[#A34F38] text-white font-bold px-8 py-4 rounded-full shadow-lg shadow-[#B85C43]/30 transition-colors mb-5 text-[16px]"
+            className="flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto bg-[#B85C43] hover:bg-[#A34F38] text-white font-bold px-5 sm:px-8 py-4 rounded-full shadow-lg shadow-[#B85C43]/30 transition-colors mb-5 text-[13px] sm:text-[16px] whitespace-nowrap"
           >
             🚀 QUIERO EL PROTOCOLO COMPLETO
           </motion.a>
 
-          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-y-2.5 sm:gap-x-6 sm:gap-y-3 justify-center items-center text-sm font-medium text-slate-600">
-            <span className="flex items-center justify-center gap-1.5">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-y-0.5 sm:gap-x-6 sm:gap-y-3 justify-center items-center text-xs sm:text-sm font-medium text-slate-600">
+            <span className="flex items-center justify-center gap-1 sm:gap-1.5">
               <Star
-                className="w-4 h-4 fill-[#d4a017] text-[#d4a017]"
+                className="w-3 h-3 sm:w-4 sm:h-4 fill-[#d4a017] text-[#d4a017]"
                 aria-hidden="true"
               />
               4.9/5 — Reseñas verificadas
             </span>
-            <span className="flex items-center justify-center gap-1.5">
+            <span className="flex items-center justify-center gap-1 sm:gap-1.5">
               <ShieldCheck
-                className="w-4 h-4 text-[#4A7CB5]"
+                className="w-3 h-3 sm:w-4 sm:h-4 text-[#4A7CB5]"
                 aria-hidden="true"
               />
               Garantía de 7 Días
             </span>
-            <span className="flex items-center justify-center gap-1.5">
-              <Zap className="w-4 h-4 text-[#E8A23D]" aria-hidden="true" />
+            <span className="flex items-center justify-center gap-1 sm:gap-1.5">
+              <Zap className="w-3 h-3 sm:w-4 sm:h-4 text-[#E8A23D]" aria-hidden="true" />
               Acceso inmediato
             </span>
-            <span className="flex items-center justify-center gap-1.5">
+            <span className="flex items-center justify-center gap-1 sm:gap-1.5">
               <CreditCard
-                className="w-4 h-4 text-[#4A7CB5]"
+                className="w-3 h-3 sm:w-4 sm:h-4 text-[#4A7CB5]"
                 aria-hidden="true"
               />
               Pago único
