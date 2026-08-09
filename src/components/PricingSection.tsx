@@ -121,14 +121,8 @@ export function PricingSection() {
           </div>
 
           <div className="font-heading text-6xl md:text-7xl font-bold text-[#B85C43] leading-none mb-4">
-            $19
+            AR$ 29.990
           </div>
-          <span className="inline-block bg-slate-100 text-slate-700 text-sm font-medium px-4 py-1.5 rounded-full mb-5">
-            <span className="md:hidden">Pagás en tu moneda local</span>
-            <span className="hidden md:inline">
-              Pagás en tu moneda local · MXN · COP · ARS · CLP · PEN
-            </span>
-          </span>
           <p className="text-[#B85C43] font-semibold text-base leading-snug mb-6">
             🔥 ¡Última oportunidad! El precio sube al finalizar el contador.
           </p>

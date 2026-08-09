@@ -34,7 +34,7 @@ export function FinalPricingCTA() {
             Kit Completo: Protocolo GLP-1 Sin Rebote + 5 Bonos GRATIS
           </h3>
           <div className="text-slate-500 line-through mb-2">USD 97</div>
-          <div className="text-4xl font-bold text-[#B85C43] mb-6">$19 USD</div>
+          <div className="text-4xl font-bold text-[#B85C43] mb-6">AR$ 29.990</div>
           <motion.a
             href={getCheckoutUrl()}
             whileHover={{
