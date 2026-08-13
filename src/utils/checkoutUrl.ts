@@ -1,5 +1,5 @@
 const CHECKOUT_BASE_URL =
-  'https://bio-hack-peso-ideal.impultienda.ar/checkout';
+  'https://sistema-maestro-de-reflexologia-clinica-para-profesionales.impultienda.ar/checkout';
 
 /**
  * Appends the current page's query string (utm_source, utm_campaign, gclid,

@@ -40,9 +40,9 @@ export function FloatingCTA() {
             <a
               href="#comprar"
               onClick={scrollToOffer}
-              className="inline-flex items-center justify-center gap-2 bg-[#B85C43] hover:bg-[#A34F38] text-white font-bold text-base px-8 py-4 rounded-full shadow-2xl shadow-[#B85C43]/40 border-2 border-white/20 transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-brand-teal hover:bg-[#00ffcc] text-brand-dark font-black uppercase tracking-widest text-sm px-8 py-4 rounded-lg shadow-2xl shadow-[#00d4aa]/30 border-2 border-white/10 transition-colors"
             >
-              🚀 ¡QUIERO EL PROTOCOLO YA!
+              ¡Quiero el Sistema Ya!
             </a>
           </div>
         </motion.div>

@@ -1,182 +1,114 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import {
-  Flame,
-  ArrowRight,
-  Zap,
-  CreditCard,
-  ShieldCheck,
-  Lock,
-} from "lucide-react";
+import { ArrowRight, Zap, CreditCard, ShieldCheck, Lock } from "lucide-react";
 import { getCheckoutUrl } from "../utils/checkoutUrl";
-export function PricingSection() {
-  const [timeLeft, setTimeLeft] = useState({
-    h: 1,
-    m: 28,
-    s: 47,
-  });
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev.s > 0)
-          return {
-            ...prev,
-            s: prev.s - 1,
-          };
-        if (prev.m > 0)
-          return {
-            ...prev,
-            m: prev.m - 1,
-            s: 59,
-          };
-        if (prev.h > 0)
-          return {
-            ...prev,
-            h: prev.h - 1,
-            m: 59,
-            s: 59,
-          };
-        return prev;
-      });
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
-  const timeBlocks = [
-    {
-      value: timeLeft.h,
-      label: "Horas",
-    },
-    {
-      value: timeLeft.m,
-      label: "Minutos",
-    },
-    {
-      value: timeLeft.s,
-      label: "Segundos",
-    },
-  ];
 
+const incluye = [
+  "6 módulos clínicos completos (180+ páginas)",
+  "12 protocolos listos para aplicar",
+  "Fichas de evaluación + consentimiento legal",
+  "Guía de contraindicaciones y seguridad",
+  "Script de venta para llenar tu agenda",
+  "Certificado de especialista para tu gabinete",
+];
+
+export function PricingSection() {
   return (
     <section
       id="pricing"
-      className="relative overflow-hidden bg-gradient-to-b from-[#5C6851] via-[#6A765E] to-[#4A553F] pt-12 md:pt-14 pb-0"
+      className="relative overflow-hidden bg-brand-dark pt-12 md:pt-14 pb-0"
     >
       <div className="container mx-auto px-4 max-w-2xl text-center relative z-10">
-        <span className="inline-block px-6 py-2.5 mb-6 rounded-full border border-white/30 bg-white/10 text-white/90 font-semibold tracking-[0.18em] uppercase text-xs">
-          🔥 Precio Introductorio — Por Tiempo Limitado
+        <span className="inline-flex items-center gap-2 px-6 py-2.5 mb-6 rounded-full border border-brand-teal/30 bg-brand-teal/10 text-brand-teal font-bold tracking-[0.18em] uppercase text-xs animate-pulse">
+          ⚡ Precio de lanzamiento — sube sin aviso previo
         </span>
-        <h2 className="font-heading text-3xl md:text-5xl font-bold text-white leading-tight mb-6">
+        <h2 className="font-heading text-3xl md:text-5xl font-black text-white leading-tight mb-6">
           Accedé al sistema ahora y empezá{" "}
-          <em className="italic font-bold text-[#f0e6d2]">
-            el cambio hoy
-          </em>
+          <span className="text-brand-teal">el cambio hoy</span>
         </h2>
 
-        <div className="relative inline-block mb-2 w-full max-w-md mx-auto">
-          <picture>
-            <source
-              media="(min-width: 768px)"
-              srcSet={`${import.meta.env.BASE_URL}protocolo-glp1-mockup.webp`}
-            />
-            <img
-              src={`${import.meta.env.BASE_URL}protocolo-glp1-mockup-mobile.webp`}
-              alt="Protocolo GLP-1 Sin Rebote"
-              width={1254}
-              height={1254}
-              loading="lazy"
-              decoding="async"
-              className="w-full h-auto rounded-2xl shadow-2xl shadow-black/20"
-            />
-          </picture>
-
-          <div className="absolute -top-3 -right-2 md:top-2 md:right-2 w-24 h-24 md:w-28 md:h-28 flex items-center justify-center">
-            <div
-              className="absolute inset-0 bg-[#c0392b] rotate-12"
-              style={{
-                clipPath:
-                  "polygon(50% 0%, 61% 12%, 78% 6%, 79% 24%, 96% 30%, 86% 45%, 100% 58%, 83% 64%, 86% 82%, 68% 80%, 60% 97%, 47% 84%, 30% 92%, 28% 73%, 9% 72%, 19% 56%, 4% 45%, 21% 38%, 14% 20%, 33% 22%, 38% 4%)",
-              }}
-            />
-            <div className="relative text-center text-white leading-none rotate-12">
-              <div className="text-2xl md:text-3xl font-extrabold">80%</div>
-              <div className="text-[9px] md:text-[10px] font-bold tracking-wide mt-0.5">
-                DE DESCUENTO
-              </div>
-            </div>
+        <div className="relative inline-block mb-2 w-full max-w-sm mx-auto">
+          <div className="relative rounded-2xl p-4 bg-gradient-to-br from-[#0d1b2a] to-[#0a1628] border border-brand-teal/20 shadow-[0_20px_60px_rgba(0,212,170,0.15)]">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcSet={`${import.meta.env.BASE_URL}protocolo-glp1-mockup.webp`}
+              />
+              <img
+                src={`${import.meta.env.BASE_URL}protocolo-glp1-mockup-mobile.webp`}
+                alt="Sistema Maestro de Reflexología Clínica"
+                width={1254}
+                height={1254}
+                loading="lazy"
+                decoding="async"
+                className="w-full h-auto rounded-xl"
+              />
+            </picture>
           </div>
         </div>
       </div>
 
       <div
         id="comprar"
-        className="container mx-auto px-4 max-w-md relative z-10 pb-16 -mt-4 scroll-mt-6"
+        className="container mx-auto px-4 max-w-md relative z-10 pb-16 mt-6 scroll-mt-6"
       >
-        <div className="bg-white rounded-3xl shadow-2xl shadow-black/10 p-7 md:p-8 text-center">
-          <div className="text-slate-500 text-base md:text-lg mb-3">
-            Precio regular: <span className="line-through">$127.990</span>
-          </div>
-
-          <div className="inline-flex items-center gap-2 bg-[#F3E3C3] text-[#9C5330] font-bold px-5 py-2.5 rounded-full text-sm mb-5">
-            <Flame className="w-4 h-4" /> 80% DE DESCUENTO
-          </div>
-
-          <div className="font-heading text-6xl md:text-7xl font-bold text-[#B85C43] leading-none mb-4">
-            $29.990
-          </div>
-          <p className="text-[#B85C43] font-semibold text-base leading-snug mb-6">
-            🔥 ¡Última oportunidad! El precio sube al finalizar el contador.
+        <div className="bg-brand-card border border-brand-border rounded-3xl shadow-2xl shadow-black/30 p-7 md:p-8 text-center">
+          <p className="text-brand-gray text-base md:text-lg mb-2">
+            Precio regular: <span className="line-through">ARS 234.940</span>
           </p>
 
-          <div className="flex justify-center gap-3 mb-7">
-            {timeBlocks.map((block) => (
-              <div
-                key={block.label}
-                className="bg-[#1B2A41] text-white rounded-2xl px-4 py-4 min-w-[84px]"
-              >
-                <div className="font-heading text-4xl md:text-5xl font-bold leading-none">
-                  {String(block.value).padStart(2, "0")}
-                </div>
-                <div className="text-[10px] tracking-[0.15em] uppercase mt-2 text-white/70">
-                  {block.label}
-                </div>
-              </div>
+          <div className="price-glow font-heading font-black text-brand-teal leading-none mb-2 text-[3.5rem] md:text-7xl">
+            ARS 27.990
+          </div>
+          <p className="text-brand-gray text-sm mb-8">
+            Pago único · Acceso de por vida · Sin cuotas · Sin renovaciones
+          </p>
+
+          <div className="grid grid-cols-1 gap-2.5 text-left mb-8">
+            {incluye.map((item) => (
+              <p key={item} className="flex items-start gap-2.5 text-brand-text text-sm">
+                <span className="text-brand-teal font-black flex-shrink-0">✓</span>
+                {item}
+              </p>
             ))}
           </div>
 
           <motion.a
             href={getCheckoutUrl()}
-            whileHover={{
-              scale: 1.02,
-            }}
-            whileTap={{
-              scale: 0.98,
-            }}
-            className="flex items-center justify-center gap-3 w-full bg-[#B85C43] hover:bg-[#A34F38] text-white font-bold text-lg md:text-xl px-6 py-5 rounded-full shadow-lg shadow-[#B85C43]/30 transition-colors mb-6"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="flex items-center justify-center gap-3 w-full bg-brand-teal hover:bg-[#00ffcc] text-brand-dark font-black uppercase tracking-widest text-base md:text-lg px-6 py-5 rounded-xl shadow-[0_0_30px_#00d4aa33] transition-all mb-6"
           >
             <span className="flex items-center gap-2 text-center">
-              🚀 QUIERO EL PROTOCOLO COMPLETO
+              Acceder al Sistema Completo
             </span>
-            <ArrowRight className="w-6 h-6 flex-shrink-0" />
+            <ArrowRight className="w-5 h-5 flex-shrink-0" />
           </motion.a>
 
-          <div className="grid grid-cols-2 gap-y-3 text-sm text-slate-700 font-semibold">
-            <div className="flex items-center justify-center gap-2 pr-2 border-r border-slate-200">
-              <Zap className="w-4 h-4 text-[#E8A23D]" />
+          <div className="grid grid-cols-2 gap-y-3 text-sm text-brand-gray font-semibold">
+            <div className="flex items-center justify-center gap-2 pr-2 border-r border-brand-border">
+              <Zap className="w-4 h-4 text-brand-teal" />
               Acceso inmediato
             </div>
             <div className="flex items-center justify-center gap-2 pl-2">
-              <CreditCard className="w-4 h-4 text-[#4A7CB5]" />
+              <CreditCard className="w-4 h-4 text-brand-blue" />
               Pago único
             </div>
-            <div className="flex items-center justify-center gap-2 pr-2 border-r border-slate-200">
-              <ShieldCheck className="w-4 h-4 text-[#4A7CB5]" />
+            <div className="flex items-center justify-center gap-2 pr-2 border-r border-brand-border">
+              <ShieldCheck className="w-4 h-4 text-brand-blue" />
               Garantía de 7 días
             </div>
             <div className="flex items-center justify-center gap-2 pl-2">
-              <Lock className="w-4 h-4 text-[#E8A23D]" />
+              <Lock className="w-4 h-4 text-brand-teal" />
               Pago seguro
             </div>
           </div>
+
+          <p className="text-brand-gray/60 text-xs mt-6 italic">
+            ¿Por qué este precio? Es de lanzamiento. A medida que más
+            terapeutas accedan y validen el contenido, el precio será
+            ajustado.
+          </p>
         </div>
       </div>
     </section>

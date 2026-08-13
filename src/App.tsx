@@ -3,15 +3,15 @@ import { MotionConfig } from "framer-motion";
 import { Landing } from "./pages/Landing";
 import { useScreenInit } from "./useScreenInit";
 import { getCheckoutUrl } from "./utils/checkoutUrl";
-const META_PIXEL_ID = "8851973042408664";
+const META_PIXEL_ID = "1322586023412339";
 const PAGE_TITLE =
-  "Protocolo GLP-1 Sin Rebote — Grasamax | Biohacking & GLP-1";
+  "Sistema Maestro de Reflexología Clínica — Sistema Profesional de 7 Días";
 const PAGE_DESC =
-  "El manual técnico que tu médico no te dio para transformarte con GLP-1 sin perder músculo, firmeza ni piel.";
+  "Implementá Reflexología Clínica en tu gabinete en 7 días: protocolos por patología, fichas profesionales y guiones de venta listos para aplicar.";
 const HERO_IMAGE = `${import.meta.env.BASE_URL}protocolo-glp1-mockup.webp`;
 const HERO_IMAGE_MOBILE = `${import.meta.env.BASE_URL}protocolo-glp1-mockup-mobile.webp`;
 
-const SITE_URL = "https://grasamax.com";
+const SITE_URL = "https://reflexologia.tupuntodigital.shop/";
 function setMeta(attr: "name" | "property", key: string, content: string) {
   let el = document.head.querySelector<HTMLMetaElement>(
     `meta[${attr}="${key}"]`,
@@ -66,7 +66,7 @@ export function App() {
       "viewport",
       "width=device-width, initial-scale=1, viewport-fit=cover",
     );
-    setMeta("name", "theme-color", "#F9F8F6");
+    setMeta("name", "theme-color", "#0a0f1a");
     setMeta("name", "robots", "index, follow");
     setMeta("property", "og:type", "website");
     setMeta("property", "og:title", PAGE_TITLE);
@@ -77,7 +77,7 @@ export function App() {
     setMeta(
       "property",
       "og:site_name",
-      "Grasamax",
+      "Reflexología Clínica Pro",
     );
     setMeta("name", "twitter:card", "summary_large_image");
     setMeta("name", "twitter:image", HERO_IMAGE);
@@ -91,17 +91,17 @@ export function App() {
       ld.textContent = JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Product",
-        name: "Protocolo GLP-1 Sin Rebote",
+        name: "Sistema Maestro de Reflexología Clínica",
         description: PAGE_DESC,
         image: HERO_IMAGE,
         brand: {
           "@type": "Brand",
-          name: "Grasamax",
+          name: "Reflexología Clínica Pro",
         },
         offers: {
           "@type": "Offer",
-          price: "19",
-          priceCurrency: "USD",
+          price: "27990",
+          priceCurrency: "ARS",
           availability: "https://schema.org/InStock",
           url: getCheckoutUrl(),
         },
@@ -118,28 +118,28 @@ export function App() {
         "@type": "FAQPage",
         mainEntity: [
           {
-            q: "¿Sirve si recién empecé el tratamiento?",
-            a: "Sí, y es el momento ideal. Aplicar el protocolo desde el inicio es la diferencia entre terminar con un cuerpo atlético o uno flácido.",
+            q: "¿Sirve si ya soy terapeuta con años de experiencia?",
+            a: "Especialmente para vos. El sistema no empieza desde cero: asume que ya tenés la base técnica y te da los protocolos clínicos, la documentación y las herramientas de posicionamiento que faltaban para subir tu ticket.",
           },
           {
-            q: "¿Tengo que hacer una dieta estricta?",
-            a: "No. La guía te enseña a optimizar lo poco que comés por la falta de hambre, para que cada bocado preserve tu músculo.",
+            q: "¿Es contenido técnico o básico?",
+            a: "Técnico y aplicado. Cada protocolo incluye anatomía de referencia, secuencia exacta de puntos, técnica de presión y frecuencia de sesión recomendada por patología.",
           },
           {
-            q: "¿Es seguro? ¿Puedo tener problemas?",
-            a: "100% legal. Son protocolos de nutrición, entrenamiento y suplementación basados en estudios PubMed. No reemplaza la orientación médica.",
+            q: "¿Necesito comprar equipos o materiales especiales?",
+            a: "No. Todo el sistema se aplica con tus manos. No hay inversión en equipos, aparatología ni insumos especiales de ningún tipo.",
           },
           {
-            q: "¿Cuándo recibo el material?",
-            a: "Acceso inmediato al finalizar el pago. Recibís todo en tu correo, listo para usar en cualquier dispositivo.",
+            q: "¿Reemplaza la formación médica?",
+            a: "No. Este material es educativo y profesional, diseñado como complemento de tu formación existente. No reemplaza el criterio clínico ni la derivación médica cuando corresponde.",
           },
           {
-            q: "Ya llevo meses con el tratamiento y noto flacidez. ¿Sirve igual?",
-            a: "Sí. Nunca es tarde para proteger tu músculo. De hecho, si ya notás flacidez, es más urgente empezar hoy.",
+            q: "¿Cómo recibo el material después de comprar?",
+            a: "Acceso inmediato por email después del pago. Descarga directa en PDF, lista para tu celular, tablet o computadora en minutos.",
           },
           {
             q: "¿Puedo pedir reembolso?",
-            a: "Sí. 7 días de garantía incondicional. Si no quedás satisfecho, te devolvemos el 100% sin preguntas.",
+            a: "Sí. Garantía incondicional de 7 días. Si no estás satisfecho, te devolvemos el 100% de tu inversión sin preguntas ni formularios.",
           },
         ].map((item) => ({
           "@type": "Question",
