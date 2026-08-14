@@ -5,14 +5,14 @@ const bonuses = [
   {
     num: 1,
     title: "Expediente Pro: Fichas de Evaluación y Consentimiento Clínico",
-    desc: "Formularios listos para imprimir. Anamnesis, mapa de hallazgos y consentimiento informado para tu protección legal. Cuando tu paciente llena esta ficha, te percibe como clínico, no como masajista.",
+    desc: "Formularios listos para imprimir. Anamnesis, mapa de hallazgos y consentimiento informado para mayor respaldo documental y límites profesionales claros. Cuando tu paciente llena esta ficha, te percibe como clínico, no como masajista.",
     value: "ARS 34.990",
     image: "bono1.webp",
   },
   {
     num: 2,
     title: "Protocolo de Seguridad: Guía Maestra de Contraindicaciones",
-    desc: "Qué casos no tratar y cómo protegerte legalmente. Embarazo, diabetes avanzada, patologías oncológicas. Señales de derivación médica urgente.",
+    desc: "Qué casos no tratar y cómo trabajar dentro de límites profesionales claros. Embarazo, diabetes avanzada, patologías oncológicas. Señales de derivación médica urgente.",
     value: "ARS 24.990",
     image: "bono2.webp",
   },
@@ -29,13 +29,6 @@ const bonuses = [
     desc: "Posturas correctas, uso de nudillos y ejercicios de descarga post-jornada. Señales tempranas de tendinitis y túnel carpiano.",
     value: "ARS 24.990",
     image: "bono4.webp",
-  },
-  {
-    num: 5,
-    title: "Certificado de Especialista en Reflexología Aplicada",
-    desc: "Plantilla de diploma profesional lista para personalizar e imprimir en A4. Diseñado para colgar en tu gabinete y generar confianza visual.",
-    value: "ARS 19.990",
-    image: "bono5.webp",
   },
 ];
 
@@ -98,10 +91,10 @@ export function BonusesSection() {
             Todo incluido en
           </p>
           <h3 className="font-heading font-bold text-white text-3xl md:text-4xl mb-3">
-            el Sistema Maestro de Reflexología Clínica
+            el Sistema Maestro de Reflexología para Profesionales
           </h3>
           <p className="text-brand-gray">
-            Los 5 bonos son gratis con tu compra hoy.
+            Los 4 bonos son gratis con tu compra hoy.
           </p>
         </div>
       </div>

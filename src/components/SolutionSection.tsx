@@ -34,7 +34,7 @@ export function SolutionSection() {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-3 gap-2 sm:gap-5">
           {profiles.map((p, i) => (
             <motion.div
               key={p.title}
@@ -42,11 +42,13 @@ export function SolutionSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="bg-brand-card border border-brand-border rounded-2xl p-6 text-left"
+              className="bg-brand-card border border-brand-border rounded-lg sm:rounded-2xl p-2.5 sm:p-6 text-left"
             >
-              <p.icon className="w-8 h-8 text-brand-teal mb-4" />
-              <h3 className="text-white font-bold text-lg mb-2">{p.title}</h3>
-              <p className="text-brand-gray leading-relaxed text-sm">{p.desc}</p>
+              <div className="flex items-center gap-2 mb-1.5 sm:block sm:mb-4">
+                <p.icon className="w-7 h-7 sm:w-8 sm:h-8 text-brand-teal" />
+                <h3 className="text-white font-bold text-base sm:text-lg sm:mb-2">{p.title}</h3>
+              </div>
+              <p className="text-brand-gray leading-relaxed text-xs sm:text-sm">{p.desc}</p>
             </motion.div>
           ))}
         </div>

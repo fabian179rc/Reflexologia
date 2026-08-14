@@ -10,10 +10,10 @@ const sinSistema = [
 ];
 
 const conSistema = [
-  "Sistema completo y ordenado, listo para aplicar en 7 días",
-  "Fichas de evaluación y consentimiento con validez legal",
+  "Sistema completo y organizado para empezar a implementar desde el primer día.",
+  "Fichas de evaluación y modelos de consentimiento informado para documentar tu práctica profesional.",
   "12 protocolos clínicos ya armados por patología",
-  "Posicionamiento de especialista para cobrar el doble por sesión",
+  "Posicionamiento profesional para salir de la tarifa de relax y justificar un servicio de mayor valor.",
 ];
 
 export function Comparison() {

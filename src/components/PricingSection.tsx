@@ -6,10 +6,9 @@ import { getCheckoutUrl } from "../utils/checkoutUrl";
 const incluye = [
   "6 módulos clínicos completos (180+ páginas)",
   "12 protocolos listos para aplicar",
-  "Fichas de evaluación + consentimiento legal",
+  "Fichas de evaluación + modelo de consentimiento informado",
   "Guía de contraindicaciones y seguridad",
-  "Script de venta para llenar tu agenda",
-  "Certificado de especialista para tu gabinete",
+  "Scripts de venta para presentar, ofrecer y hacer seguimiento de tu servicio.",
 ];
 
 export function PricingSection() {
@@ -36,7 +35,7 @@ export function PricingSection() {
               />
               <img
                 src={`${import.meta.env.BASE_URL}protocolo-glp1-mockup-mobile.webp`}
-                alt="Sistema Maestro de Reflexología Clínica"
+                alt="Sistema Maestro de Reflexología para Profesionales"
                 width={1254}
                 height={1254}
                 loading="lazy"

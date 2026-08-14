@@ -28,7 +28,7 @@ export function FinalPricingCTA() {
 
         <div className="bg-brand-card border border-brand-border rounded-3xl p-6 md:p-7 max-w-xl mx-auto mb-6">
           <h3 className="font-bold text-white mb-2 text-lg md:text-xl">
-            Sistema Maestro de Reflexología Clínica + 5 Bonos GRATIS
+            Sistema Maestro de Reflexología para Profesionales + 4 Bonos GRATIS
           </h3>
           <div className="text-brand-gray line-through mb-2">ARS 234.940</div>
           <div className="text-4xl font-black text-brand-teal mb-6">
@@ -40,18 +40,26 @@ export function FinalPricingCTA() {
             whileTap={{ scale: 0.98 }}
             className="flex items-center justify-center gap-2 md:gap-3 w-full bg-brand-teal hover:bg-[#00ffcc] text-brand-dark font-black uppercase tracking-widest text-[13px] md:text-lg px-4 py-3.5 md:px-6 md:py-5 rounded-xl shadow-[0_0_30px_#00d4aa33] transition-all mb-4"
           >
-            <span className="text-center">Sí, quiero mi sistema completo hoy</span>
+            <span className="text-center">
+              Sí, quiero mi sistema completo hoy
+            </span>
             <ArrowRight className="w-4 h-4 md:w-6 md:h-6 flex-shrink-0" />
           </motion.a>
         </div>
 
         <div className="flex flex-col sm:flex-row sm:flex-wrap gap-y-2.5 sm:gap-x-6 sm:gap-y-3 justify-center items-center text-sm text-brand-gray font-medium">
           <span className="flex items-center justify-center gap-1.5">
-            <Star className="w-4 h-4 fill-brand-teal text-brand-teal" aria-hidden="true" />
-            4.9/5 — Reseñas verificadas
+            <Star
+              className="w-4 h-4 fill-brand-teal text-brand-teal"
+              aria-hidden="true"
+            />
+            4.8/5 — Reseñas verificadas
           </span>
           <span className="flex items-center justify-center gap-1.5">
-            <ShieldCheck className="w-4 h-4 text-brand-blue" aria-hidden="true" />
+            <ShieldCheck
+              className="w-4 h-4 text-brand-blue"
+              aria-hidden="true"
+            />
             Garantía de 7 Días
           </span>
           <span className="flex items-center justify-center gap-1.5">
@@ -59,7 +67,10 @@ export function FinalPricingCTA() {
             Acceso inmediato
           </span>
           <span className="flex items-center justify-center gap-1.5">
-            <CreditCard className="w-4 h-4 text-brand-blue" aria-hidden="true" />
+            <CreditCard
+              className="w-4 h-4 text-brand-blue"
+              aria-hidden="true"
+            />
             Pago único
           </span>
         </div>

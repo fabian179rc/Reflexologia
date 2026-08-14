@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
-const PRODUCT_NAME = "Sistema Maestro de Reflexología Clínica";
+const PRODUCT_NAME = "Sistema Maestro de Reflexología para Profesionales";
 const PRODUCT_NAME_SHORT = "Sistema de Reflexología";
 
 const NOTIFICATIONS = [

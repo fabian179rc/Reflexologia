@@ -11,13 +11,11 @@ const temas = [
   { emoji: '💼', label: 'Script de Venta' },
   { emoji: '✍️', label: 'Consentimiento Informado' },
   { emoji: '🖐️', label: 'Ergonomía Terapéutica' },
-  { emoji: '🎓', label: 'Certificado de Especialista' },
 ];
 
 const respaldo = [
   { emoji: '🔬', label: 'Anatomía y fisiología real' },
   { emoji: '🚫', label: 'Sin opinión de internet' },
-  { emoji: '🌎', label: 'Aplicable en toda Latinoamérica' },
 ];
 
 export function ContentSection() {
@@ -34,8 +32,8 @@ export function ContentSection() {
             <span className="text-brand-teal">PRÁCTICA CLÍNICA</span>
           </h2>
           <p className="text-lg md:text-xl font-bold text-brand-gray max-w-2xl mx-auto">
-            Todo lo que necesitás para aplicar Reflexología Clínica desde el
-            primer paciente.
+            Un sistema completo para organizar y profesionalizar tu aplicación
+            de reflexología desde el primer paciente.
           </p>
         </div>
 
@@ -52,7 +50,7 @@ export function ContentSection() {
             />
             <img
               src={`${import.meta.env.BASE_URL}protocolo-glp1-mockup-mobile.webp`}
-              alt="Sistema Maestro de Reflexología Clínica — vista previa"
+              alt="Sistema Maestro de Reflexología para Profesionales — vista previa"
               width={1254}
               height={1254}
               loading="lazy"
@@ -94,7 +92,7 @@ export function ContentSection() {
           className="bg-brand-card border border-brand-teal/20 rounded-3xl p-5 md:p-7 text-center"
         >
           <h3 className="font-heading font-bold text-white text-xl md:text-2xl mb-5">
-            Respaldado por anatomía y evidencia real
+            Basado en anatomía aplicada, criterios de seguridad y protocolos estructurados
           </h3>
           <div className="flex flex-wrap justify-center gap-3 mb-6">
             {respaldo.map((r, i) => (
@@ -109,7 +107,7 @@ export function ContentSection() {
           </div>
           <p className="text-brand-gray text-sm md:text-base leading-relaxed max-w-2xl mx-auto flex items-center justify-center gap-2">
             <CheckCircle2 className="w-4 h-4 text-brand-teal flex-shrink-0" />
-            Cada protocolo cita su referencia — no es opinión de internet.
+            Contenido estructurado y organizado para que no dependas de información dispersa o contradictoria.
           </p>
         </motion.div>
       </div>

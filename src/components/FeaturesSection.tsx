@@ -6,7 +6,7 @@ const stats = [
   { value: "6", label: "Módulos" },
   { value: "12", label: "Protocolos" },
   { value: "180+", label: "Páginas" },
-  { value: "5", label: "Bonos" },
+  { value: "4", label: "Bonos" },
 ];
 
 const modules = [

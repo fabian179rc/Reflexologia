@@ -6,16 +6,16 @@ const changes = [
   {
     icon: BadgeCheck,
     title: "Presencia Clínica",
-    desc: "Fichas, protocolos y certificado que te muestran como especialista desde el primer minuto.",
+    desc: "Fichas y protocolos organizados que te muestran como especialista desde el primer minuto.",
   },
   {
     icon: HeartHandshake,
     title: "Confianza del Paciente",
-    desc: "Consentimiento informado y evaluación documentada: menos dudas, más pacientes que vuelven.",
+    desc: "Consentimiento informado y evaluación documentada: menos improvisación y una experiencia de atención más clara, ordenada y profesional.",
   },
   {
     icon: CalendarCheck,
-    title: "Agenda Llena",
+    title: "Más Consultas Convertidas en Sesiones",
     desc: "Scripts de venta listos para ofrecer el servicio sin incomodidad, en WhatsApp e Instagram.",
   },
   {

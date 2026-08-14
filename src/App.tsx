@@ -3,9 +3,9 @@ import { MotionConfig } from "framer-motion";
 import { Landing } from "./pages/Landing";
 import { useScreenInit } from "./useScreenInit";
 import { getCheckoutUrl } from "./utils/checkoutUrl";
-const META_PIXEL_ID = "1322586023412339";
+const META_PIXEL_ID = "37700639772914955";
 const PAGE_TITLE =
-  "Sistema Maestro de Reflexología Clínica — Sistema Profesional de 7 Días";
+  "Sistema Maestro de Reflexología para Profesionales — Sistema Profesional de 7 Días";
 const PAGE_DESC =
   "Implementá Reflexología Clínica en tu gabinete en 7 días: protocolos por patología, fichas profesionales y guiones de venta listos para aplicar.";
 const HERO_IMAGE = `${import.meta.env.BASE_URL}protocolo-glp1-mockup.webp`;
@@ -91,7 +91,7 @@ export function App() {
       ld.textContent = JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Product",
-        name: "Sistema Maestro de Reflexología Clínica",
+        name: "Sistema Maestro de Reflexología para Profesionales",
         description: PAGE_DESC,
         image: HERO_IMAGE,
         brand: {

@@ -1,27 +1,27 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Star, MessageCircle } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Star, MessageCircle } from "lucide-react";
 const testimonials = [
   {
-    initial: 'C',
-    color: 'bg-brand-teal/15 text-brand-teal',
-    name: 'Carla R.',
-    location: 'Buenos Aires · Terapeuta certificada',
-    text: 'Tenía la técnica pero improvisaba cada sesión. Con los protocolos por patología dejé de dudar y mis pacientes lo notaron desde la primera consulta.',
+    initial: "C",
+    color: "bg-brand-teal/15 text-brand-teal",
+    name: "Carla R.",
+    location: "Buenos Aires · Terapeuta certificada",
+    text: "Tenía la técnica pero improvisaba cada sesión. Con los protocolos por patología dejé de dudar y mis pacientes lo notaron desde la primera consulta.",
   },
   {
-    initial: 'M',
-    color: 'bg-brand-blue/15 text-brand-blue',
-    name: 'Martín S.',
-    location: 'Córdoba · Dueño de gabinete',
-    text: 'Las fichas de evaluación cambiaron cómo me perciben mis pacientes. Pasé de cobrar tarifa de relax a armar paquetes de sesiones clínicas.',
+    initial: "M",
+    color: "bg-brand-blue/15 text-brand-blue",
+    name: "Martín S.",
+    location: "Córdoba · Dueño de gabinete",
+    text: "Las fichas de evaluación cambiaron cómo me perciben mis pacientes. Pasé de cobrar tarifa de relax a armar paquetes de sesiones clínicas.",
   },
   {
-    initial: 'R',
-    color: 'bg-emerald-500/15 text-emerald-400',
-    name: 'Romina M.',
-    location: 'Lima · Terapeuta independiente',
-    text: 'El script de venta me sacó la incomodidad de ofrecer el servicio nuevo. Llené mi agenda del mes en dos semanas.',
+    initial: "R",
+    color: "bg-emerald-500/15 text-emerald-400",
+    name: "Romina M.",
+    location: "Lima · Terapeuta independiente",
+    text: "El script de venta me sacó la incomodidad de ofrecer el servicio nuevo. Llené mi agenda del mes en dos semanas.",
   },
 ];
 
@@ -38,7 +38,7 @@ export function TestimonialsBottom() {
             Lo que dicen los terapeutas que ya tienen el sistema
           </h2>
           <p className="text-brand-gray text-sm md:text-base">
-            ⭐ 4.9/5 — +1.200 terapeutas en LATAM · México · Colombia ·
+            ⭐ 4.8/5 — +1.200 terapeutas en LATAM · México · Colombia ·
             Argentina · Chile
           </p>
         </div>

@@ -38,7 +38,7 @@ export function ProblemSection() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-2 sm:gap-6">
           {situations.map((item, i) => (
             <motion.div
               key={i}
@@ -46,11 +46,13 @@ export function ProblemSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="bg-brand-card border border-brand-border rounded-2xl p-6 transition-all duration-300 hover:border-brand-teal/40"
+              className="bg-brand-card border border-brand-border rounded-lg sm:rounded-2xl p-2.5 sm:p-6 transition-all duration-300 hover:border-brand-teal/40"
             >
-              <div className="text-3xl mb-3">{item.emoji}</div>
-              <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-              <p className="text-brand-gray leading-relaxed">{item.desc}</p>
+              <div className="flex items-center gap-2 mb-1.5 sm:block sm:mb-3">
+                <span className="text-2xl sm:text-3xl">{item.emoji}</span>
+                <h3 className="text-base sm:text-lg font-bold text-white sm:mb-2">{item.title}</h3>
+              </div>
+              <p className="text-brand-gray leading-relaxed text-sm sm:text-base">{item.desc}</p>
             </motion.div>
           ))}
         </div>
