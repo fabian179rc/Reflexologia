@@ -28,7 +28,7 @@ export function FinalPricingCTA() {
 
         <div className="bg-brand-card border border-brand-border rounded-3xl p-6 md:p-7 max-w-xl mx-auto mb-6">
           <h3 className="font-bold text-white mb-2 text-lg md:text-xl">
-            Sistema Maestro de Reflexología para Profesionales + 4 Bonos GRATIS
+            Sistema Maestro de Reflexología para Profesionales + 5 Bonos GRATIS
           </h3>
           <div className="text-brand-gray line-through mb-2">ARS 234.940</div>
           <div className="text-4xl font-black text-brand-teal mb-6">

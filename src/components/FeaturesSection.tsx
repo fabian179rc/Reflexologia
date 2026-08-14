@@ -6,7 +6,7 @@ const stats = [
   { value: "6", label: "Módulos" },
   { value: "12", label: "Protocolos" },
   { value: "180+", label: "Páginas" },
-  { value: "4", label: "Bonos" },
+  { value: "5", label: "Bonos" },
 ];
 
 const modules = [
@@ -47,7 +47,7 @@ export function FeaturesSection() {
           ))}
         </div>
 
-        <ul className="space-y-3 max-w-xl mx-auto">
+        <ul className="space-y-2 sm:space-y-3 max-w-xl mx-auto">
           {modules.map((m, i) => (
             <motion.li
               key={m}
@@ -55,10 +55,10 @@ export function FeaturesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.06 }}
-              className="flex items-start gap-3 bg-brand-card border border-brand-border rounded-xl px-4 py-3"
+              className="flex items-start gap-2.5 sm:gap-3 bg-brand-card border border-brand-border rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3"
             >
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-teal" />
-              <span className="text-brand-text leading-relaxed">{m}</span>
+              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5 text-brand-teal" />
+              <span className="text-brand-text text-sm sm:text-base leading-relaxed">{m}</span>
             </motion.li>
           ))}
         </ul>

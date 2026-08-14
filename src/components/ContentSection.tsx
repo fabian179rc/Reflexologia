@@ -64,7 +64,7 @@ export function ContentSection() {
           <h3 className="font-heading font-bold text-white text-xl md:text-2xl mb-4 text-center">
             Incluye los bloques más importantes del sistema
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3">
             {temas.map((t, i) => (
               <motion.div
                 key={i}
@@ -72,12 +72,12 @@ export function ContentSection() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.03 }}
-                className="flex items-center gap-2.5 bg-brand-card border border-brand-border rounded-xl px-4 py-3"
+                className="flex items-center gap-2 sm:gap-2.5 bg-brand-card border border-brand-border rounded-lg sm:rounded-xl px-2.5 py-2 sm:px-4 sm:py-3"
               >
-                <span className="text-xl flex-shrink-0" aria-hidden="true">
+                <span className="text-lg sm:text-xl flex-shrink-0" aria-hidden="true">
                   {t.emoji}
                 </span>
-                <span className="font-semibold text-brand-text text-sm md:text-[15px] leading-tight">
+                <span className="font-semibold text-brand-text text-xs sm:text-sm md:text-[15px] leading-tight">
                   {t.label}
                 </span>
               </motion.div>

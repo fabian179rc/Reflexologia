@@ -11,7 +11,7 @@ const changes = [
   {
     icon: HeartHandshake,
     title: "Confianza del Paciente",
-    desc: "Consentimiento informado y evaluación documentada: menos improvisación y una experiencia de atención más clara, ordenada y profesional.",
+    desc: "Consentimiento informado y evaluación documentada, para una atención más clara y profesional.",
   },
   {
     icon: CalendarCheck,
