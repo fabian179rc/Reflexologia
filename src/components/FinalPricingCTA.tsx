@@ -32,7 +32,7 @@ export function FinalPricingCTA() {
           </h3>
           <div className="text-brand-gray line-through mb-2">ARS 234.940</div>
           <div className="text-4xl font-black text-brand-teal mb-6">
-            ARS 27.990
+            ARS 19.990
           </div>
           <motion.a
             href={getCheckoutUrl()}

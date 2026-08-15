@@ -91,7 +91,7 @@ export function FaqSection() {
             href={getCheckoutUrl()}
             className="inline-block bg-brand-teal hover:bg-[#00ffcc] text-brand-dark font-black uppercase tracking-widest px-8 py-4 rounded-lg shadow-[0_0_30px_#00d4aa33] transition-all"
           >
-            Acceder ahora por ARS 27.990
+            Acceder ahora por ARS 19.990
           </a>
         </div>
       </div>

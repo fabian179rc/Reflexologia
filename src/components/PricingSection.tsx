@@ -57,7 +57,7 @@ export function PricingSection() {
           </p>
 
           <div className="price-glow font-heading font-black text-brand-teal leading-none mb-2 text-[3.5rem] md:text-7xl">
-            ARS 27.990
+            ARS 19.990
           </div>
           <p className="text-brand-gray text-sm mb-8">
             Pago único · Acceso de por vida · Sin cuotas · Sin renovaciones
