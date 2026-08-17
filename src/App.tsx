@@ -3,7 +3,7 @@ import { MotionConfig } from "framer-motion";
 import { Landing } from "./pages/Landing";
 import { useScreenInit } from "./useScreenInit";
 import { getCheckoutUrl } from "./utils/checkoutUrl";
-const META_PIXEL_ID = "37700639772914955";
+const META_PIXEL_ID = "2225872721318810";
 const PAGE_TITLE =
   "Sistema Maestro de Reflexología para Profesionales — Sistema Profesional de 7 Días";
 const PAGE_DESC =
@@ -156,7 +156,6 @@ export function App() {
   useEffect(() => {
     if (typeof window === "undefined" || typeof document === "undefined")
       return;
-    // Solo se carga el Meta Pixel real (3505657626270665).
     if (!META_PIXEL_ID) return;
     const loadPixel = () => {
       const w = window as any;
